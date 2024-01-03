@@ -5,9 +5,6 @@
  */
 package ejemplos01;
 
-import static ejemplos01.Ejemplo08.obtenerTablaMultiplicar;
-import static ejemplos01.Ejemplo08.obtenerTablaSumar;
-
 /**
  *
  * @author reroes
@@ -16,41 +13,44 @@ public class Ejemplo081 {
 
     public static void main(String[] args) {
         // 
-        String mensajeSuma ="";
-        String mensajeSumaDos ="";
-        
-        for(int i = 1;i<=10;i++){
+        String mensajeSuma = "";
+        String mensajeSumaDos = "";
+
+        for (int i = 1; i <= 10; i++) {
             mensajeSuma = obtenerTablaSumar(10, i);
             mensajeSumaDos = obtenerTablaMultiplicar(10, i);
-            
+
             System.out.printf("%s\n", mensajeSuma);
             System.out.printf("%s\n", mensajeSumaDos);
 
         }
 
     }
-        
-    public static String obtenerTablaSumar(int limite, int tabla){
+
+    public static String obtenerTablaSumar(int limite, int tabla) {
         int operacion;
         String cadena = "";
         for (int i = 1; i <= limite; i++) {
             operacion = tabla + i;
-            cadena = String.format("%s%d + %d = %d\n", cadena, tabla, i, 
+            cadena = String.format("%s%d + %d = %d\n", cadena,
+                     tabla, i,
                     operacion);
         }
-        return cadena;        
+        return cadena;
     }
-    
-    public static String obtenerTablaMultiplicar(int limite, int tabla){
+
+    public static String obtenerTablaMultiplicar(int limite, int tabla) {
         int operacion;
         String cadena = "";
         for (int i = 1; i <= limite; i++) {
             operacion = tabla * i;
-            cadena = String.format("%s%d * %d = %d\n", cadena, tabla, i, 
+            cadena = String.format("%s%d * %d = %d\n", cadena
+                    ,
+                     tabla, i,
                     operacion);
         }
         return cadena;
-        
+
     }
-    
+
 }
