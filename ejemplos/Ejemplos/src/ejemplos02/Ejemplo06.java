@@ -10,7 +10,7 @@ package ejemplos02;
  * @author reroes
  */
 public class Ejemplo06 {
-    static int suma = 0; // variable de alcance  global
+    static int suma = 10; // variable de alcance  global
                         // se la puede usar e cualquier método
                         // hemos declarado la variable statica
                         // porque estamos usando método staticos
