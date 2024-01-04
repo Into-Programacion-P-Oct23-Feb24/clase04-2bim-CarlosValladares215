@@ -19,37 +19,40 @@ public class Ejemplo041 {
         String acumulador1 = "";
         String acumulador2 = "";
         String acumuladorFinal = "";
-        
+
         for (int f = 0; f < arregloN1.length; f++) {
             for (int c = 0; c < arregloN1[f].length; c++) {
                 arregloFinal[f][c] = obtenerMultiplicacion(arregloN1[f][c],
-                         arregloN2[f][c]);
+                        arregloN2[f][c]);
             }
 
         }
 
         for (int f = 0; f < arregloN1.length; f++) {
             for (int c = 0; c < arregloN1[f].length; c++) {
-              acumulador1 = String.format("%s%d  ",acumulador1, arregloN1[f][c]);
-              acumulador2 = String.format("%s%d  ",acumulador2, arregloN2[f][c]);
-              acumuladorFinal = String.format("%s%d  ",acumuladorFinal, arregloFinal[f][c]);
+                acumulador1 = String.format("%s%d  "
+                        , acumulador1, arregloN1[f][c]);
+                acumulador2 = String.format("%s%d  "
+                        , acumulador2, arregloN2[f][c]);
+                acumuladorFinal = String.format("%s%d  "
+                        , acumuladorFinal, arregloFinal[f][c]);
             }
-            acumulador1 = String.format("%s\n",acumulador1);
-            acumulador2 = String.format("%s\n",acumulador2);
-            acumuladorFinal = String.format("%s\n",acumuladorFinal);
+            acumulador1 = String.format("%s\n", acumulador1);
+            acumulador2 = String.format("%s\n", acumulador2);
+            acumuladorFinal = String.format("%s\n", acumuladorFinal);
         }
-        
-        System.out.printf("%s\n",acumulador1);
-        System.out.printf("%s\n",acumulador2);
-        System.out.printf("%s",acumuladorFinal);
+
+        System.out.printf("%s\n", acumulador1);
+        System.out.printf("%s\n", acumulador2);
+        System.out.printf("%s", acumuladorFinal);
 
     }
 
     public static int obtenerMultiplicacion(int a, int b) {
-        int suma;
-        suma = a * b;
+        int multiplicacion;
+        multiplicacion = a * b;
 
-        return suma;
+        return multiplicacion;
     }
 
 }
