@@ -34,11 +34,14 @@ public class Ejemplo041 {
               acumulador2 = String.format("%s%d  ",acumulador2, arregloN2[f][c]);
               acumuladorFinal = String.format("%s%d  ",acumuladorFinal, arregloFinal[f][c]);
             }
-            acumulador1 = String.format("%s\n ",acumulador1);
-            acumulador2 = String.format("%s\n ",acumulador2);
-            acumuladorFinal = String.format("%s\n ",acumuladorFinal);
+            acumulador1 = String.format("%s\n",acumulador1);
+            acumulador2 = String.format("%s\n",acumulador2);
+            acumuladorFinal = String.format("%s\n",acumuladorFinal);
         }
         
+        System.out.printf("%s\n",acumulador1);
+        System.out.printf("%s\n",acumulador2);
+        System.out.printf("%s",acumuladorFinal);
 
     }
 
